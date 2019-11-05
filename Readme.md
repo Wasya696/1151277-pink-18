@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Василий Гурьянов](https://up.htmlacademy.ru/adaptive/18/user/1151277).
-* Наставник: [Андрей Грачев] (https://up.htmlacademy.ru/adaptive/18/user/252055).
+* Наставник: [Андрей Грачев](https://up.htmlacademy.ru/adaptive/18/user/252055).
 
 ---
 
