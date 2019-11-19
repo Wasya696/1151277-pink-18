@@ -10,10 +10,10 @@
         <div class="container">
           <div class="main-nav__main-wrapper">
             <div class="main-nav__logo-wrapper">
-              <a class="logo page-header--logo" href="index.html">
-                <img class="logo-pink-mobile" src="https://via.placeholder.com/150x150">
-                <img class="logo-pink-tablet" src="https://via.placeholder.com/150x150">
-                <img class="logo-pink-desktop" src="https://via.placeholder.com/150x150">
+              <a class="logo page-header-logo" href="index.html">
+                <img class="logo-pink-mobile" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
+                <img class="logo-pink-tablet" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
+                <img class="logo-pink-desktop" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
               </a>
             </div>
             <div class="main-nav__site-navigation">
@@ -22,7 +22,7 @@
                   <a class="main-nav__link" href="index.html">Главная</a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">Фотографии</a>
+                  <a class="main-nav__link">Фотографии</a>
                 </li>
                 <li class="main-nav__item">
                   <a class="main-nav__link" href="form.html">Конкурс</a>
@@ -33,15 +33,11 @@
               </ul>
             </div>
           </div>
-          <button class="main-nav--toggle">
-            <img class="logo-pink-mobile" src="https://via.placeholder.com/150x150">
-          </button>
+          <button class="main-nav__toggle visually-hidden">Меню</button>
         </div>
       </nav>
       <div class="intro">
-        <div class="container">
-          <h1 class="intro__title">Фотографии пользователей</h1>
-        </div>
+        <h1 class="intro__title">Фотографии пользователей</h1>
       </div>
     </header>
 
@@ -52,11 +48,12 @@
         </div>
       </div>
       <article class="photo-day">
+        <h2 class="visually-hidden">Фото Анны</h2>
         <div class="photo-day__picture">
-          <img src="https://via.placeholder.com/150x150">
+          <img src="https://via.placeholder.com/150x150" alt="Фото Анны">
         </div>
         <div class="photo-day__text">
-          <div class="photo-day__text--wrapper">
+          <div class="photo-day__wrapper">
             <a class="photo-day__author" href="#">Анна</a>
             <time class="photo-day__time" datetime="2019-11-02T22:55">(5 минут назад)</time>
           </div>
@@ -64,20 +61,22 @@
           <div class="social-like">
             <span class="social-like__link">Нравится:</span>
             <span class="social-like__count">215</span>
-            <span class="social-like__icon"></span>
+            <button class="social-like__icon visually-hidden">Лайк</button>
           </div>
         </div>
       </article>
 
-      <article class="photo-user">
+      <section class="photo-user">
+        <h2 class="visually-hidden">Остальные фотографии пользователей</h2>
         <div class="container">
           <div class="photo-items">
-            <section class="photo-item">
+            <article class="photo-item">
+              <h3 class="visually-hidden">Фото Левона</h3>
               <div class="photo-item__picture">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="https://via.placeholder.com/150x150" alt="Фото Левона">
               </div>
               <div class="photo-item__text">
-                <div class="photo-item__text--wrapper">
+                <div class="photo-item__wrapper">
                   <a class="photo-item__author" href="#">Левон</a>
                   <time class="photo-item__time" datetime="2019-11-02T18:00">(5 часов назад)</time>
                 </div>
@@ -85,16 +84,18 @@
                 <div class="social-like">
                   <span class="social-like__link">Нравится:</span>
                   <span class="social-like__count">356</span>
-                  <span class="social-like__icon"></span>
+                  <button class="social-like__icon visually-hidden">Лайк</button>
                 </div>
-            </section>
+              </div>
+            </article>
 
-            <section class="photo-item">
+            <article class="photo-item">
+              <h3 class="visually-hidden">Фото Антона</h3>
               <div class="photo-item__picture">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="https://via.placeholder.com/150x150" alt="Фото Антона">
               </div>
               <div class="photo-item__text">
-                <div class="photo-item__text--wrapper">
+                <div class="photo-item__wrapper">
                   <a class="photo-item__author" href="#">Антон</a>
                   <time class="photo-item__time" datetime="2019-11-02T11:00">(12 часов назад)</time>
                 </div>
@@ -102,16 +103,18 @@
                 <div class="social-like">
                   <span class="social-like__link">Нравится:</span>
                   <span class="social-like__count">666</span>
-                  <span class="social-like__icon"></span>
+                  <button class="social-like__icon visually-hidden">Лайк</button>
                 </div>
-            </section>
+              </div>
+            </article>
 
-            <section class="photo-item">
+            <article class="photo-item">
+              <h3 class="visually-hidden">Фото Бориса</h3>
               <div class="photo-item__picture">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="https://via.placeholder.com/150x150" alt="Фото Бориса">
               </div>
               <div class="photo-item__text">
-                <div class="photo-item__text--wrapper">
+                <div class="photo-item__wrapper">
                   <a class="photo-item__author" href="#">Борис</a>
                   <time class="photo-item__time" datetime="2019-11-02T03:00">(20 часов назад)</time>
                 </div>
@@ -119,16 +122,18 @@
                 <div class="social-like">
                   <span class="social-like__link">Нравится:</span>
                   <span class="social-like__count">215</span>
-                  <span class="social-like__icon"></span>
+                  <button class="social-like__icon visually-hidden">Лайк</button>
                 </div>
-            </section>
+              </div>
+            </article>
 
-            <section class="photo-item">
+            <article class="photo-item">
+              <h3 class="visually-hidden">Фото Сергея</h3>
               <div class="photo-item__picture">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="https://via.placeholder.com/150x150" alt="Фото Сергея">
               </div>
               <div class="photo-item__text">
-                <div class="photo-item__text--wrapper">
+                <div class="photo-item__wrapper">
                   <a class="photo-item__author" href="#">Сергей</a>
                   <time class="photo-item__time" datetime="2019-11-01T22:00">(25 часов назад)</time>
                 </div>
@@ -136,16 +141,18 @@
                 <div class="social-like">
                   <span class="social-like__link">Нравится:</span>
                   <span class="social-like__count">4</span>
-                  <span class="social-like__icon"></span>
+                  <button class="social-like__icon visually-hidden">Лайк</button>
                 </div>
-            </section>
+              </div>
+            </article>
 
-            <section class="photo-item">
+            <article class="photo-item">
+              <h3 class="visually-hidden">Фото Максима</h3>
               <div class="photo-item__picture">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="https://via.placeholder.com/150x150" alt="Фото Максима">
               </div>
               <div class="photo-item__text">
-                <div class="photo-item__text--wrapper">
+                <div class="photo-item__wrapper">
                   <a class="photo-item__author" href="#">Максим</a>
                   <time class="photo-item__time" datetime="2019-11-01T07:00">(40 часов назад)</time>
                 </div>
@@ -153,16 +160,18 @@
                 <div class="social-like">
                   <span class="social-like__link">Нравится:</span>
                   <span class="social-like__count">150</span>
-                  <span class="social-like__icon"></span>
+                  <button class="social-like__icon visually-hidden">Лайк</button>
                 </div>
-            </section>
+              </div>
+            </article>
 
-            <section class="photo-item">
+            <article class="photo-item">
+              <h3 class="visually-hidden">Фото Надежды</h3>
               <div class="photo-item__picture">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="https://via.placeholder.com/150x150" alt="Фото Надежды">
               </div>
               <div class="photo-item__text">
-                <div class="photo-item__text--wrapper">
+                <div class="photo-item__wrapper">
                   <a class="photo-item__author" href="#">Надежда</a>
                   <time class="photo-item__time" datetime="2019-11-01T02:00">(45 часов назад)</time>
                 </div>
@@ -170,31 +179,32 @@
                 <div class="social-like">
                   <span class="social-like__link">Нравится:</span>
                   <span class="social-like__count">2560</span>
-                  <span class="social-like__icon"></span>
+                  <button class="social-like__icon visually-hidden">Лайк</button>
                 </div>
-            </section>
+              </div>
+            </article>
           </div>
         </div>
-      </article>
+      </section>
     </main>
 
     <footer class="main-footer">
       <div class="container">
         <div class="main-footer__wrapper">
-          <div class="logo main-footer--logo">
-            <img class="logo-pink-mobile" src="https://via.placeholder.com/150x150">
-            <img class="logo-pink-tablet" src="https://via.placeholder.com/150x150">
-            <img class="logo-pink-desktop" src="https://via.placeholder.com/150x150">
+          <div class="logo main-footer-logo">
+            <img class="logo-pink-mobile" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
+            <img class="logo-pink-tablet" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
+            <img class="logo-pink-desktop" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
           </div>
           <div class="footer-social">
-            <a class="social-btn social-btn--twitter" href="#"></a>
-            <a class="social-btn social-btn--facebook" href="#"></a>
-            <a class="social-btn social-btn--youtube" href="#"></a>
+            <a class="social-btn social-btn--twitter" href="https://twitter.com/"></a>
+            <a class="social-btn social-btn--facebook" href="https://www.facebook.com/"></a>
+            <a class="social-btn social-btn--youtube" href="https://www.youtube.com/"></a>
           </div>
           <div class="footer-copyright">
             <b class="footer-copyright__title">Разработано</b>
-            <a href="https://htmlacademy.ru">
-              <img class="footer-copyright__link" src="https://via.placeholder.com/150x150">
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="footer-copyright__link" src="https://via.placeholder.com/150x150" alt="Логотип HTML Academy">
             </a>
           </div>
         </div>
