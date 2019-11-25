@@ -51,15 +51,15 @@
             <ul class="page-form__list">
               <li class="page-form__item">
                 <label class="label label--caption" for="surname">Фамилия</label>
-                <input class="text" type="text" name="surname" id="surname" placeholder="Укажите фамилию">
+                <input class="text" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
               </li>
               <li class="page-form__item">
                 <label class="label label--caption" for="name">Имя</label>
-                <input class="text" type="text" name="name" id="name" placeholder="Введите ваше имя">
+                <input class="text" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
               </li>
               <li class="page-form__item">
-                <label class="label label--caption" for="middle-name">Отчество</label>
-                <input class="text" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
+                <label class="label label--caption" for="middlename">Отчество</label>
+                <input class="text" type="text" name="middlename" id="middlename" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </fieldset>
@@ -102,7 +102,7 @@
               </li>
               <li class="page-form__item">
                 <label class="label label--email" for="email">Адресок почты</label>
-                <input class="email" type="email" name="email" id="email" placeholder="E-mail, пожалуйста">
+                <input class="email" type="email" name="email" id="email" placeholder="E-mail, пожалуйста *" required>
               </li>
             </ul>
           </fieldset>
@@ -130,7 +130,7 @@
             <textarea class="textarea-text" name="emotion-description" id="emotion-description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <div class="page-form__action">
-            <input class="page-form__action-submit" type="submit" value="Отправить форму">
+            <button class="page-form__action-submit" type="submit">Отправить форму</button>
             <p class="page-form__action-require">* - обязательные поля</p>
           </div>
         </form>

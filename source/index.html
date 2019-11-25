@@ -100,14 +100,16 @@
 
       <section class="slider">
         <div class="container">
-          <input type="radio" name="review" id="review-radio-1" checked>
-          <input type="radio" name="review" id="review-radio-2">
-          <input type="radio" name="review" id="review-radio-3">
           <div class="slider__wrapper">
             <div class="slide">
               <h2 class="slide__title">Николай Петров</h2>
               <p class="slide__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
+          </div>
+          <div class="slider-controls">
+            <button class="slider-controls__button slider-controls__button--current" type="button" value="1"></button>
+            <button class="slider-controls__button" type="button" value="2"></button>
+            <button class="slider-controls__button" type="button" value="3"></button>
           </div>
         </div>
       </section>
@@ -115,9 +117,6 @@
       <section class="price">
         <h2 class="visually-hidden">Платные пакеты для Pink</h2>
         <div class="container">
-          <input type="radio" name="price" id="price-radio-1">
-          <input type="radio" name="price" id="price-radio-2" checked>
-          <input type="radio" name="price" id="price-radio-3">
           <div class="price__wrapper">
             <table class="price-list">
               <thead class="price-list-head">
@@ -149,11 +148,14 @@
               </tbody>
             </table>
           </div>
+          <div class="slider-controls">
+            <button class="slider-controls__button" type="button" value="1"></button>
+            <button class="slider-controls__button slider-controls__button--current" type="button" value="2"></button>
+            <button class="slider-controls__button" type="button" value="3"></button>
+          </div>
         </div>
       </section>
-    </main>
 
-    <footer class="main-footer">
       <section class="contacts">
         <div class="container">
           <div class="contacts__wrapper">
@@ -173,6 +175,29 @@
           </div>
         </div>
       </section>
+    </main>
+
+    <footer class="main-footer main-footer--index">
+      <div class="container">
+        <div class="main-footer__wrapper">
+          <div class="logo main-footer-logo">
+            <img class="logo-pink-mobile" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
+            <img class="logo-pink-tablet" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
+            <img class="logo-pink-desktop" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
+          </div>
+          <div class="footer-social">
+            <a class="social-btn social-btn--twitter" href="https://twitter.com/"></a>
+            <a class="social-btn social-btn--facebook" href="https://www.facebook.com/"></a>
+            <a class="social-btn social-btn--youtube" href="https://www.youtube.com/"></a>
+          </div>
+          <div class="footer-copyright">
+            <b class="footer-copyright__title">Разработано</b>
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="footer-copyright__link" src="https://via.placeholder.com/150x150" alt="Логотип HTML Academy">
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
