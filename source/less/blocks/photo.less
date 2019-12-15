@@ -19,9 +19,11 @@
 }
 
 .photo__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .photo__item,

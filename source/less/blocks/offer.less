@@ -57,9 +57,6 @@
 
 .offer__list {
   .list-reset();
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   padding-top: 64px;
 
   @media @tablet {
@@ -67,6 +64,8 @@
   }
 
   @media @desktop {
+    display: flex;
+    justify-content: center;
     flex-wrap: nowrap;
     padding-top: 361px;
   }
