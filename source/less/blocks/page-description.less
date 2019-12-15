@@ -1,7 +1,16 @@
 .page-description {
   padding-top: 44px;
-  padding-bottom: 50px;
+  padding-bottom: 56px;
   text-align: center;
+
+  @media @tablet {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  @media @desktop {
+    padding-bottom: 92px;
+  }
 }
 
 .page-description__text {
@@ -10,4 +19,8 @@
   font-weight: @font-weight-basic;
   line-height: 30px;
   color: @dark-blue;
+
+  @media @tablet {
+    font-size: 18px;
+  }
 }

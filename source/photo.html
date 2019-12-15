@@ -2,40 +2,37 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Фотогалерея Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <div class="container">
-          <div class="main-nav__main-wrapper">
-            <div class="main-nav__logo-wrapper">
-              <a class="logo page-header-logo" href="index.html">
-                <img class="logo-pink-mobile" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
-                <!-- <img class="logo-pink-tablet" src="https://via.placeholder.com/150x150" alt="Логотип Пинк"> -->
-                <!-- <img class="logo-pink-desktop" src="https://via.placeholder.com/150x150" alt="Логотип Пинк"> -->
-              </a>
-            </div>
-            <div class="main-nav__site-navigation">
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="index.html">Главная</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link">Фотографии</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="form.html">Конкурс</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-                </li>
-              </ul>
-            </div>
+        <div class="main-nav__main-wrapper">
+          <div class="main-nav__logo-wrapper">
+            <a class="logo page-header-logo" href="index.html">
+              <img class="logo-pink-mobile" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
+              <!-- <img class="logo-pink-tablet" src="https://via.placeholder.com/150x150" alt="Логотип Пинк"> -->
+              <!-- <img class="logo-pink-desktop" src="https://via.placeholder.com/150x150" alt="Логотип Пинк"> -->
+            </a>
           </div>
-          <button class="main-nav__toggle visually-hidden">Меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
         </div>
+        <button class="main-nav__toggle visually-hidden">Меню</button>
       </nav>
       <div class="page-header__intro">
         <h1 class="page-header__intro-title">Фотографии пользователей</h1>
@@ -51,19 +48,20 @@
       <article class="photo photo--day">
         <h2 class="visually-hidden">Фото Анны</h2>
         <div class="photo__picture">
-          <img src="https://via.placeholder.com/150x150" alt="Фото Анны">
+          <picture>
+            <img src="https://via.placeholder.com/150x150" alt="Фото Анны">
+          </picture>
         </div>
         <div class="container">
-          <div class="photo__item">
-            <div class="photo__text">
+          <div class="photo__item photo__item--day">
+            <div class="photo__text photo__text--day">
               <div class="photo__wrapper">
                 <a class="photo__wrapper-author" href="#">Анна</a>
                 <time class="photo__wrapper-time" datetime="2019-11-02T22:55">(5 минут назад)</time>
               </div>
               <p class="photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <div class="social-like">
-                <span class="social-like__link">Нравится:</span>
-                <span class="social-like__count">215</span>
+              <div class="social-like social-like--day">
+                <span class="social-like__count">Нравится: 215</span>
                 <button class="social-like__icon visually-hidden">Лайк</button>
               </div>
             </div>
@@ -78,7 +76,9 @@
             <article class="photo__item">
               <h3 class="visually-hidden">Фото Левона</h3>
               <div class="photo__picture">
-                <img src="https://via.placeholder.com/150x150" alt="Фото Левона">
+                <picture>
+                  <img src="https://via.placeholder.com/150x150" alt="Фото Левона">
+                </picture>
               </div>
               <div class="photo__text">
                 <div class="photo__wrapper">
@@ -87,8 +87,7 @@
                 </div>
                 <p class="photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <div class="social-like">
-                  <span class="social-like__link">Нравится:</span>
-                  <span class="social-like__count">356</span>
+                  <span class="social-like__count">Нравится: 356</span>
                   <button class="social-like__icon visually-hidden">Лайк</button>
                 </div>
               </div>
@@ -97,7 +96,9 @@
             <article class="photo__item">
               <h3 class="visually-hidden">Фото Антона</h3>
               <div class="photo__picture">
-                <img src="https://via.placeholder.com/150x150" alt="Фото Антона">
+                <picture>
+                  <img src="https://via.placeholder.com/150x150" alt="Фото Антона">
+                </picture>
               </div>
               <div class="photo__text">
                 <div class="photo__wrapper">
@@ -106,8 +107,7 @@
                 </div>
                 <p class="photo__description">Соседи будут рады!</p>
                 <div class="social-like">
-                  <span class="social-like__link">Нравится:</span>
-                  <span class="social-like__count">666</span>
+                  <span class="social-like__count">Нравится: 666</span>
                   <button class="social-like__icon visually-hidden">Лайк</button>
                 </div>
               </div>
@@ -116,7 +116,9 @@
             <article class="photo__item">
               <h3 class="visually-hidden">Фото Бориса</h3>
               <div class="photo__picture">
-                <img src="https://via.placeholder.com/150x150" alt="Фото Бориса">
+                <picture>
+                  <img src="https://via.placeholder.com/150x150" alt="Фото Бориса">
+                </picture>
               </div>
               <div class="photo__text">
                 <div class="photo__wrapper">
@@ -125,8 +127,7 @@
                 </div>
                 <p class="photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <div class="social-like">
-                  <span class="social-like__link">Нравится:</span>
-                  <span class="social-like__count">215</span>
+                  <span class="social-like__count">Нравится: 215</span>
                   <button class="social-like__icon visually-hidden">Лайк</button>
                 </div>
               </div>
@@ -135,7 +136,9 @@
             <article class="photo__item">
               <h3 class="visually-hidden">Фото Сергея</h3>
               <div class="photo__picture">
-                <img src="https://via.placeholder.com/150x150" alt="Фото Сергея">
+                <picture>
+                  <img src="https://via.placeholder.com/150x150" alt="Фото Сергея">
+                </picture>
               </div>
               <div class="photo__text">
                 <div class="photo__wrapper">
@@ -144,8 +147,7 @@
                 </div>
                 <p class="photo__description">Самая кубанская в мире!</p>
                 <div class="social-like">
-                  <span class="social-like__link">Нравится:</span>
-                  <span class="social-like__count">4</span>
+                  <span class="social-like__count">Нравится: 4</span>
                   <button class="social-like__icon visually-hidden">Лайк</button>
                 </div>
               </div>
@@ -154,7 +156,9 @@
             <article class="photo__item">
               <h3 class="visually-hidden">Фото Максима</h3>
               <div class="photo__picture">
-                <img src="https://via.placeholder.com/150x150" alt="Фото Максима">
+                <picture>
+                  <img src="https://via.placeholder.com/150x150" alt="Фото Максима">
+                </picture>
               </div>
               <div class="photo__text">
                 <div class="photo__wrapper">
@@ -163,8 +167,7 @@
                 </div>
                 <p class="photo__description">Где снег-то?</p>
                 <div class="social-like">
-                  <span class="social-like__link">Нравится:</span>
-                  <span class="social-like__count">150</span>
+                  <span class="social-like__count">Нравится: 150</span>
                   <button class="social-like__icon visually-hidden">Лайк</button>
                 </div>
               </div>
@@ -173,7 +176,9 @@
             <article class="photo__item">
               <h3 class="visually-hidden">Фото Надежды</h3>
               <div class="photo__picture">
-                <img src="https://via.placeholder.com/150x150" alt="Фото Надежды">
+                <picture>
+                  <img src="https://via.placeholder.com/150x150" alt="Фото Надежды">
+                </picture>
               </div>
               <div class="photo__text">
                 <div class="photo__wrapper">
@@ -182,8 +187,7 @@
                 </div>
                 <p class="photo__description">Всем GM и взаимные лайки!</p>
                 <div class="social-like">
-                  <span class="social-like__link">Нравится:</span>
-                  <span class="social-like__count">2560</span>
+                  <span class="social-like__count">Нравится: 2560</span>
                   <button class="social-like__icon visually-hidden">Лайк</button>
                 </div>
               </div>
