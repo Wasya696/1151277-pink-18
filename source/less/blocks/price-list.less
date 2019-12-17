@@ -1,8 +1,28 @@
 .price-list__header {
+  display: none;
   padding-top: 23px;
   padding-bottom: 21px;
   background-color: @dark-blue;
   color: @white;
+
+  &:nth-child(3) {
+    display: table-cell;
+  }
+
+  @media @tablet {
+    display: table-cell;
+  }
+
+  &:first-child {
+    display: none;
+    background-color: transparent;
+
+    @media @tablet {
+      display: table-cell;
+    }
+  }
+
+
 }
 
 .price-list__header-type,
@@ -13,11 +33,27 @@
 .price-list__header-type {
   font-size: 18px;
   font-weight: 700;
+
+  @media @tablet {
+    font-size: 16px;
+  }
+
+  @media @desktop {
+    font-size: 18px;
+  }
 }
 
 .price-list__header-cost {
   font-size: 24px;
   font-weight: 300;
+
+  @media @tablet {
+    font-size: 18px;
+  }
+
+  @media @desktop {
+    font-size: 24px;
+  }
 }
 
 .price-list__body {
@@ -25,8 +61,17 @@
 }
 
 .price-list__cell {
+  display: none;
   padding-top: 22px;
   padding-bottom: 23px;
+
+  @media @tablet {
+    display: table-cell;
+  }
+
+  &:first-child {
+    display: table-cell;
+  };
 }
 
 .price-list__cell-description {
@@ -35,4 +80,8 @@
   font-size: @font-size-basic;
   font-weight: @font-weight-basic;
   color: @dark-blue;
+
+  @media @desktop {
+    font-size: 18px;
+  }
 }

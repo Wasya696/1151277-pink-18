@@ -1,0 +1,30 @@
+.map {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  background-color: @light-grey;
+  /* цвет фона для эксперимента */
+
+  @media @tablet {
+    height: 350px;
+  }
+
+  @media @desktop {
+    height: 500px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 10;
+  }
+}
+
