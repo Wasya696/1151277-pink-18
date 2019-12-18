@@ -5,7 +5,17 @@
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 100% 27px;
+  background-size: 100% auto;
+
+  @media @tablet {
+    padding-top: 112px;
+    padding-bottom: 68px;
+  }
+
+  @media @desktop {
+    padding-top: 157px;
+    padding-bottom: 96px;
+  }
 }
 
 .price__slider {
