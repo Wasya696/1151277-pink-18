@@ -8,9 +8,18 @@ body {
   color: @dark-blue;
   font-style: normal;
   background-color: @body-color;
+
+  @media @tablet {
+    min-width: @tablet-width;
+  }
+
+  @media @desktop {
+    min-width: @desktop-width;
+  }
 }
 
 img {
   max-width: 100%;
   height: auto;
+  border: none;
 }

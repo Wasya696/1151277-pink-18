@@ -1,20 +1,76 @@
 .photo {
-  margin-bottom: 49px;
-
-  @media @tablet {
-    margin-bottom: 74px;
-  }
+  position: relative;
+  margin: 0 auto 20px;
+  font-size: 0;
+  line-height: 0;
+  background-color: @white;
 
   @media @desktop {
-    margin-bottom: 68px;
+    margin: 0 auto;
   }
 
   &--day {
-    margin-bottom: 20px;
+    max-width: 1200px;
+
+    &::after {
+      content: "Панорама дня";
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: auto;
+      right: 20px;
+      bottom: auto;
+      width: 140px;
+      height: 36px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 36px;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: @lipstick;
+      color: @white;
+
+      @media @tablet {
+        top: 57px;
+      }
+
+      @media @desktop {
+        top: 54px;
+        right: 130px;
+      }
+    }
 
     @media @tablet {
       margin-bottom: 50px;
     }
+  }
+}
+
+.photo__mobile {
+  display: block;
+
+  @media @tablet {
+    display: none;
+  }
+}
+
+.photo__tablet {
+  display: none;
+
+  @media @tablet {
+    display: block;
+  }
+
+  @media @desktop {
+    display: none;
+  }
+}
+
+.photo__desktop {
+  display: none;
+
+  @media @desktop {
+    display: block;
   }
 }
 
@@ -33,24 +89,34 @@
 }
 
 .photo__item {
-  width: 300px;
+  max-width: 300px;
   margin-bottom: 20px;
 
   @media @desktop {
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 
   &--day {
     width: 100%;
+
+    @media @tablet {
+      margin-bottom: 0;
+      max-width: 620px;
+    }
+
+    @media @desktop {
+      max-width: 940px;
+    }
   }
 }
 
 .photo__text {
-  justify-content: flex-start;
-  flex-grow: 1;
+  position: relative;
+  padding: 18px 19px 19px;
   background-color: @light-grey;
 
   @media @tablet {
+    padding: 24px 27px 25px;
     min-height: 106px;
   }
 
@@ -59,26 +125,35 @@
       min-height: 70px;
     }
 
-    @media @desktop {
+    @media @tablet {
       min-height: 0;
     }
   }
 }
 
+.photo__wrapper-author,
+.photo__wrapper-time {
+  vertical-align: middle;
+  line-height: @line-height-basic;
+}
+
 .photo__wrapper-author {
   font-size: @font-size-basic;
   font-weight: bold;
-  line-height: @line-height-basic;
   color: @dark-blue;
   text-decoration: none;
 }
 
 .photo__wrapper-time {
+  padding-left: 2px;
   font-size: 12px;
   font-weight: 300;
-  line-height: @line-height-basic;
   color: @dark-blue;
   text-transform: uppercase;
+
+  @media @tablet {
+    padding-left: 4px;
+  }
 }
 
 .photo__description {

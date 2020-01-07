@@ -1,0 +1,53 @@
+.page-header-logo {
+  width: 75px;
+  height: 23px;
+  overflow: hidden;
+
+  @media @tablet {
+    margin-top: -9px;
+    width: 147px;
+    height: 41px;
+  }
+}
+
+.page-header-logo
+.page-header-logo__text {
+  display: block;
+  transform: translate(-72px, -17px);
+  fill: @white;
+
+  @media @tablet {
+    transform: translate(0);
+  }
+}
+
+.page-header-logo:hover
+.page-header-logo__text {
+  fill: @lipstick;
+}
+
+.page-header-logo:active
+.page-header-logo__text {
+  fill: @white;
+  opacity: 0.3;
+}
+
+.page-header-logo__glasses {
+  display: none;
+  fill: @white;
+
+  @media @tablet {
+    display: block;
+  }
+}
+
+.page-header-logo:hover
+.page-header-logo__glasses {
+  fill: @lipstick;
+}
+
+.page-header-logo:active
+.page-header-logo__glasses {
+  fill: @white;
+  opacity: 0.3;
+}

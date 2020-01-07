@@ -2,13 +2,50 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: row-reverse;
-  padding-top: 18px;
+  align-items: center;
+  padding-top: 11px;
+
+  @media @tablet {
+    margin-top: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &--day {
+    @media @tablet {
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: 13px;
+      left: auto;
+      right: 23px;
+      bottom: auto;
+      width: 135px;
+      justify-content: space-around;
+    }
+  }
 }
 
 .social-like__count {
+  margin-left: 19px;
   font-size: 12px;
   font-weight: @font-weight-basic;
   line-height: @line-height-basic;
   color: @lipstick;
   text-transform: uppercase;
+
+  @media @tablet {
+    margin-left: 0;
+  }
+}
+
+.social-like__icon {
+  padding: 0;
+  vertical-align: middle;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
 }

@@ -1,28 +1,88 @@
 .page-header {
+  /*position: relative;
   background-color: @page-header-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 342px;
+  /*background-position: 50% 342px;*/
+  /*background-position: 50% 259px;
+  color: @white;*/
+  position: relative;
+  background-color: @page-header-color;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-position-y: 0;
+  background-size: 171%;
   color: @white;
 
   @media @tablet {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: 50% 304px;
+    /*background-position: 50% 304px;*/
+    background-position: 50% 256px;
   }
 
   @media @desktop {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: 50% 0;
   }
+
+/*  &--index {
+    overflow: hidden;
+  }*/
+
+/*  &--nojs {
+    padding-top: 66px;
+    background-position: 50% 0;
+
+    @media @tablet {
+      padding-top: 110px;
+    }
+
+    @media @desktop {
+      padding-top: 0;
+    }
+  }*/
+
+  &--nojs {
+    background-position: bottom -224px center;
+    background-size: 100%;
+
+    @media @tablet {
+      background-position: bottom -256px center;
+      background-size: 172%;
+    }
+  }
+}
+
+.page-header--index
+.page-header__wrapper {
+  position: relative;
+  padding-bottom: 395px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    width: 258px;
+    height: 286px;
+    left: -62px;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .page-header__intro {
-  padding-top: 35px;
-  padding-bottom: 87px;
+  margin: 0 auto;
+  padding-top: 29px;
+  padding-bottom: 83px;
+  width: 170px;
 
   @media @tablet {
-    padding-top: 81px;
-    padding-bottom: 150px;
+    padding-top: 70px;
+    padding-bottom: 139px;
+    width: 350px;
   }
 
   @media @desktop {
@@ -50,7 +110,7 @@
   margin: 0;
   font-size: 24px;
   font-weight: 300;
-  line-height: 28px;
+  line-height: 29px;
   text-align: center;
 
   @media @tablet {
