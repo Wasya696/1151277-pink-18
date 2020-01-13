@@ -1,36 +1,83 @@
 .download-app {
-  padding-top: 424px;
-  padding-bottom: 35px;
+  position: absolute;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  bottom: -271px;
+  width: 100%;
   text-align: center;
+  background-color: @dark-blue;
+  color: @white;
+  z-index: 10;
 
   @media @tablet {
-    padding-top: 103px;
-    padding-bottom: 112px;
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 105px;
+    bottom: auto;
+    margin: 0 auto;
+    width: 620px;
+    background-color: transparent;
   }
 
   @media @desktop {
-    padding-top: 121px;
-    padding-bottom: 125px;
+    padding-top: 106px;
+    padding-bottom: 122px;
+    width: 940px;
   }
 }
 
 .download-app__wrapper {
   @media @tablet {
-    width: 300px;
+    max-width: 48.388%;
+  }
+
+  @media @desktop {
+    max-width: 32%;
   }
 }
 
-.download-app__title {
-  margin: 0;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 28px;
+.download-app__list {
+  .list-reset();
 }
 
-.download-app__description {
+.download-app__item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.download-app__title {
+  display: none;
+
+  @media @tablet {
+    display: block;
+    margin: 0 auto 29px;
+    max-width: 200px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 49px;
+  }
+
+  @media @desktop {
+    margin: 0 auto 54px;
+    max-width: 240px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.download-app__text {
   margin: 0;
-  padding-top: 25px;
+  margin-top: 20px;
   font-size: @font-size-basic;
   font-weight: 300;
   line-height: @line-height-basic;
+
+  @media @tablet {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+
+  @media @desktop {
+    margin-top: 55px;
+  }
 }

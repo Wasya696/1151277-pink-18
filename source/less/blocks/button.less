@@ -1,9 +1,39 @@
 .button {
+  display: block;
+  padding: 15px;
+  width: 280px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  border: 3px solid @white;
+  border-radius: 50px;
+  color: @white;
+  background-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+
   &--store {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 18px;
-    color: @white;
-    text-decoration: none;
+    margin: 0 auto 30px;
+
+    @media @tablet {
+      margin-bottom: 43px;
+    }
+
+    @media @desktop {
+      margin-bottom: 64px;
+      width: 300px;
+      font-size: 21px;
+    }
+
+    &:hover {
+      color: @lipstick;
+      background-color: @white;
+    }
+
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+    }
   }
 }

@@ -1,108 +1,50 @@
 .main-nav {
   @media @desktop {
     display: flex;
-    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 10px;
     padding-right: 10px;
-    max-width: 940px;
-    justify-content: space-between;
+    width: 940px;
+    background-color: transparent;
   }
 }
 
-.main-nav__wrapper {
-/*  padding: 21px 20px 25px;
-  border-bottom: 1px solid @black;
+.main-nav__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 20px;
+
+  @media @tablet {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
 
   @media @desktop {
-    border-bottom: none;
-  }*/
-}
-
-.main-nav__wrapper-inner {
-  background-color: rgba(0, 0, 0, 0.5);
-
-  &--nojs {
-    background-color: @dark-blue;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
-.main-nav__wrapper-inner--nojs
-.main-nav__top {
-  padding: 22px 20px 24px;
-  border-bottom: 1px solid @black;
-
-  @media @tablet {
-    padding: 36px 20px 41px;
-  }
-}
-
-.main-nav__top {
-  display: flex;
-  margin: 0 auto;
-  max-width: 940px;
-  padding: 22px 20px 21px;
-  justify-content: space-between;
-
-  @media @tablet {
-    padding: 36px 20px 42px;
-  }
-}
-
-.main-nav__wrapper-inner
-.main-nav__toggle,
-.main-nav__wrapper-inner--nojs
 .main-nav__toggle {
-  position: absolute;
+  position: relative;
   display: block;
+  align-self: flex-end;
   padding: 0;
-  top: 21px;
-  right: 19px;
-  width: 50px;
-  height: 24px;
-  background-color: transparent;
   border: 0;
-  outline: 0;
-  cursor: pointer;
-
-  @media @tablet {
-    top: 40px;
-  }
-}
-
-.main-nav__wrapper-inner--nojs
-.main-nav__toggle {
   width: 24px;
   height: 23px;
+  color: @white;
+  background-color: transparent;
+  cursor: pointer;
+  outline: 0;
+
+  @media @desktop {
+    display: none;
+  }
 }
 
-.main-nav__wrapper-inner
-.main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 4px;
-  background-color: @white;
-  box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
-}
-
-.main-nav__wrapper-inner
-.main-nav__toggle:hover::before {
-  background-color: @lipstick;
-  box-shadow: 0 10px 0 0 @lipstick, 0 20px 0 0 @lipstick;
-}
-
-.main-nav__wrapper-inner
-.main-nav__toggle:active::before {
-  background-color: @lipstick;
-  box-shadow: 0 10px 0 0 @lipstick, 0 20px 0 0 @lipstick;
-  opacity: 0.3;
-}
-
-.main-nav__wrapper-inner--nojs
 .main-nav__toggle::before,
-.main-nav__wrapper-inner--nojs
 .main-nav__toggle::after {
   content: "";
   position: absolute;
@@ -113,88 +55,24 @@
   background-color: @white;
 }
 
-.main-nav__wrapper-inner--nojs
 .main-nav__toggle::before {
   transform: rotate(45deg);
   box-shadow: none;
 }
 
-.main-nav__wrapper-inner--nojs
 .main-nav__toggle::after {
   transform: rotate(-45deg);
 }
 
-.main-nav__wrapper-inner--nojs
 .main-nav__toggle:hover::before,
-.main-nav__wrapper-inner--nojs
 .main-nav__toggle:hover::after {
   background-color: @lipstick;
   box-shadow: none;
 }
 
-.main-nav__wrapper-inner--nojs
 .main-nav__toggle:active::before,
-.main-nav__wrapper-inner--nojs
 .main-nav__toggle:active::after {
   background-color: @lipstick;
   box-shadow: none;
   opacity: 0.3;
-}
-
-.main-nav__list {
-  .list-reset();
-  background-color: @page-header-color;
-  line-height: 32px;
-
-  @media @desktop {
-    display: flex;
-    padding-top: 47px;
-    padding-bottom: 44px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 622px;
-    line-height: 18px;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-}
-
-.main-nav__item {
-  padding: 14px 0;
-  text-align: center;
-  border-top: 1px solid #485461;
-  border-bottom: 1px solid @black;
-
-  @media @desktop {
-    padding: 10px 0;
-    border: 0;
-  }
-
-  &:not(:last-child) {
-    @media @desktop {
-      margin-right: 80px;
-    }
-  }
-}
-
-.main-nav__link {
-  font-size: 18px;
-  font-weight: 700;
-  color: inherit;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  &[href]:hover {
-    color: @lipstick;
-  }
-
-  &[href]:active {
-    opacity: 0.3;
-  }
-
-  @media @desktop {
-    display: block;
-    padding: 14px 0;
-    font-weight: @font-weight-basic;
-    text-transform: none;
-  }
 }

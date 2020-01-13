@@ -1,16 +1,19 @@
 .page-header-logo {
-  width: 75px;
-  height: 23px;
-  overflow: hidden;
+  color: @white;
+}
+
+.page-header-logo,
+.page-header-logo__image {
+  display: block;
+  width: 74px;
+  height: 24px;
 
   @media @tablet {
-    margin-top: -9px;
-    width: 147px;
-    height: 41px;
+    width: 146px;
+    height: 40px;
   }
 }
 
-.page-header-logo
 .page-header-logo__text {
   display: block;
   transform: translate(-72px, -17px);
@@ -21,13 +24,13 @@
   }
 }
 
-.page-header-logo:hover
-.page-header-logo__text {
+.page-header-logo[href]:hover .page-header-logo__text,
+.page-header-logo[href]:hover .page-header-logo__glasses,
+.page-header-logo[href]:hover .page-header-logo__glasses-desktop {
   fill: @lipstick;
 }
 
-.page-header-logo:active
-.page-header-logo__text {
+.page-header-logo[href]:active .page-header-logo__text {
   fill: @white;
   opacity: 0.3;
 }
@@ -39,15 +42,47 @@
   @media @tablet {
     display: block;
   }
+
+  @media @desktop {
+    display: none;
+  }
 }
 
-.page-header-logo:hover
-.page-header-logo__glasses {
+.page-header-logo[href]:hover .page-header-logo__glasses {
   fill: @lipstick;
 }
 
-.page-header-logo:active
-.page-header-logo__glasses {
+.page-header-logo[href]:active .page-header-logo__glasses,
+.page-header-logo[href]:active .page-header-logo__glasses-desktop {
   fill: @white;
+  opacity: 0.3;
+}
+
+.page-header-logo__glasses-desktop,
+.page-header-logo__star,
+.page-header-logo__star-logo {
+  display: none;
+
+  @media @desktop {
+    display: block;
+  }
+}
+
+.page-header-logo__glasses-desktop {
+  fill: @white;
+}
+
+.page-header-logo__star,
+.page-header-logo__star-logo {
+  fill: @lipstick;
+}
+
+.page-header-logo[href]:hover .page-header-logo__star,
+.page-header-logo[href]:hover .page-header-logo__star-logo {
+  fill: @white;
+}
+
+.page-header-logo[href]:active .page-header-logo__star,
+.page-header-logo[href]:active .page-header-logo__star-logo {
   opacity: 0.3;
 }
