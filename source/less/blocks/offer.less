@@ -3,11 +3,11 @@
   text-align: center;
 
   @media @tablet {
-    padding-top: 59px;
+    padding-top: 45px;
   }
 
   @media @desktop {
-    padding-top: 78px;
+    padding-top: 67px;
   }
 }
 
@@ -15,7 +15,7 @@
   margin-bottom: 32px;
 
   @media @tablet {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   @media @desktop {
@@ -24,8 +24,9 @@
 }
 
 .offer__header-slogan {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 26px;
+  width: 210px;
   font-size: 24px;
   font-weight: 300;
   line-height: 28px;
@@ -33,13 +34,23 @@
 
   @media @tablet {
     margin-bottom: 0;
+    width: 590px;
     font-size: 40px;
     line-height: 48px;
+
+    &:last-of-type {
+      width: 350px;
+    }
   }
 
   @media @desktop {
+    width: 735px;
     font-size: 50px;
     line-height: 60px;
+
+    &:last-of-type {
+      width: 450px;
+    }
   }
 
   &:last-of-type {
@@ -57,22 +68,130 @@
 
 .offer__list {
   .list-reset();
-  padding-top: 64px;
+  position: relative;
+  padding-top: 81px;
 
   @media @tablet {
-    padding-top: 55px;
+    padding-top: 75px;
   }
 
   @media @desktop {
+    position: static;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: nowrap;
-    padding-top: 361px;
+    padding-top: 0;
   }
 }
 
 .offer__item {
+  position: relative;
   padding-bottom: 31px;
+
+  &:last-of-type {
+    padding-bottom: 319px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 157px;
+      height: 278px;
+      background-image: url("../img/iphone-screen-mobile@1x.png");
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+  }
+
+  @media @tablet {
+    position: static;
+    width: 308px;
+    margin-left: auto;
+    padding-bottom: 34px;
+    text-align: left;
+
+    &:last-of-type {
+      padding-bottom: 43px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        margin: auto;
+        margin-right: 0;
+        left: 0;
+        right: 340px;
+        bottom: 0;
+        width: 268px;
+        height: 481px;
+        background-image: url("../img/iphone-screen-3-tablet@1x.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+      }
+    }
+  }
+
+  @media @desktop {
+    padding-top: 335px;
+    padding-bottom: 34px;
+    position: relative;
+    text-align: center;
+
+    &:first-of-type {
+      &::after {
+        content: "";
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        width: 292px;
+        height: 302px;
+        background-image: url("../img/iphone-screen-1-desktop@1x.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+      }
+    }
+
+    &:nth-child(2) {
+      &::after {
+        content: "";
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        width: 292px;
+        height: 302px;
+        background-image: url("../img/iphone-screen-2-desktop@1x.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+      }
+    }
+
+    &:last-of-type {
+      padding-bottom: 34px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        width: 292px;
+        height: 302px;
+        background-image: url("../img/iphone-screen-3-desktop@1x.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+      }
+    }
+  }
 }
 
 .offer__item-title {
@@ -81,53 +200,33 @@
   font-size: 18px;
   font-weight: 700;
   line-height: @line-height-basic;
+
+  @media @desktop {
+    margin: 23px auto;
+    max-width: 225px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .offer__item-description {
-  margin: 0;
+  margin: 0 auto;
+  width: 270px;
   font-size: @font-size-basic;
   font-weight: @font-weight-basic;
   line-height: @line-height-basic;
-}
-
-.offer__footer {
-  display: none;
 
   @media @tablet {
-    display: block;
+    margin-left: 0;
+    width: 308px;
   }
 
   @media @desktop {
-    background-color: @light-grey;
+    margin: 0;
+    padding-left: 34px;
+    padding-right: 34px;
+    width: auto;
+    font-size: 18px;
+    line-height: 30px;
   }
-}
-
-.offer__wrapper {
-  padding-top: 60px;
-  padding-bottom: 137px;
-
-  @media @desktop {
-    padding-bottom: 118px;
-  }
-}
-
-.offer__wrapper-title {
-  margin: 0;
-  margin-bottom: 10px;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 30px;
-  color: @black;
-}
-
-.offer__wrapper-description {
-  margin: 0;
-  font-size: 18px;
-  font-weight: @font-weight-basic;
-  line-height: inherit;
-  color: @dark-blue;
-}
-
-.offer__wrapper-link {
-  color: @lipstick;
 }

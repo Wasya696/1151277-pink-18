@@ -1,0 +1,124 @@
+.offer-footer {
+  display: none;
+
+  @media @tablet {
+    display: block;
+    padding-top: 97px;
+    padding-bottom: 42px;
+  }
+
+  @media @desktop {
+    padding-top: 127px;
+    padding-bottom: 113px;
+    background-color: @light-grey;
+  }
+}
+
+.offer-footer__wrapper::before,
+.offer-footer__wrapper::after {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+
+  @media @desktop {
+    bottom: 0;
+  }
+}
+
+.offer-footer__wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translate(0%, -13%);
+
+    @media @desktop {
+      width: 298px;
+      height: 345px;
+      transform: translate(0%, -7%);
+    }
+  }
+
+  &::after {
+    content: "24";
+    width: 174px;
+    height: 174px;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 165px;
+    text-align: center;
+    color: @lipstick;
+    border: 15px solid @lipstick;
+    border-radius: 50%;
+    transform: translate(8%, 9%);
+
+    @media @desktop {
+      width: 220px;
+      height: 220px;
+      font-size: 120px;
+      line-height: 205px;
+      border: 16px solid @lipstick;
+      transform: translate(9%, 0%);
+    }
+  }
+}
+
+.offer-footer__efficiency {
+  margin-left: auto;
+  width: 308px;
+  text-align: left;
+
+  @media @desktop {
+    width: 572px;
+  }
+}
+
+.offer-footer__efficiency-title {
+  margin: 0;
+  max-width: 180px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: @black;
+
+  @media @desktop {
+    max-width: 100%;
+    line-height: 30px;
+  }
+}
+
+.offer-footer__efficiency-description,
+.offer-footer__efficiency-link {
+  font-size: @font-size-basic;
+  font-weight: @font-weight-basic;
+  line-height: @line-height-basic;
+
+  @media @desktop {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.offer-footer__efficiency-description {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: @dark-blue;
+
+  @media @desktop {
+    padding: 23px 80px 31px 0;
+  }
+}
+
+.offer-footer__efficiency-link {
+  color: @lipstick;
+}

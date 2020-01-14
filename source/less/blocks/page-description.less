@@ -1,15 +1,15 @@
 .page-description {
   padding-top: 44px;
-  padding-bottom: 56px;
+  padding-bottom: 50px;
   text-align: center;
 
   @media @tablet {
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: 92px;
+    padding-bottom: 76px;
   }
 
   @media @desktop {
-    padding-bottom: 92px;
+    padding-bottom: 88px;
   }
 
   &--form {
@@ -24,13 +24,19 @@
 }
 
 .page-description__text {
-  margin: 0;
+  margin: 0 auto;
+  width: 245px;
   font-size: @font-size-basic;
   font-weight: @font-weight-basic;
   line-height: 30px;
   color: @dark-blue;
 
   @media @tablet {
+    width: 450px;
     font-size: 18px;
+  }
+
+  @media @desktop {
+    width: 575px;
   }
 }

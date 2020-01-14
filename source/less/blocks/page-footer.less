@@ -27,9 +27,37 @@
   }
 }
 
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .page-footer__copyright-title {
+  padding-right: 15px;
   font-size: @font-size-basic;
   font-weight: @font-weight-basic;
   line-height: 18px;
   color: @dark-blue;
+
+  @media @desktop {
+    font-size: 18px;
+  }
+}
+
+.page-footer__copyright-link {
+  width: 27px;
+  height: 34px;
+}
+
+.page-footer__copyright-icon {
+  fill: @lipstick;
+
+  &:hover {
+    fill: @dark-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
