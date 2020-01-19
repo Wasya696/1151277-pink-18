@@ -1,0 +1,92 @@
+.range-controls {
+  display: none;
+  position: relative;
+
+  @media @tablet {
+    display: block;
+  }
+
+  @media @desktop {
+    margin-right: 30px;
+  }
+
+  &--active {
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 34px;
+
+    @media @tablet {
+      position: relative;
+      margin: 0;
+      bottom: 0;
+    }
+
+    @media @desktop {
+      margin-right: 30px;
+    }
+  }
+}
+
+.range-controls__bar {
+  margin: 0 auto;
+  width: 240px;
+  height: 2px;
+  background-color: @dark-blue;
+
+  @media @tablet {
+    width: 202px;
+  }
+
+  @media @desktop {
+    width: 288px;
+  }
+}
+
+.range-controls__toggle {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: 35px;
+  width: 10px;
+  height: 10px;
+  background-color: @light-grey;
+  border: 2px solid @lipstick;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @media @tablet {
+    &--crop {
+      right: 42px;
+    }
+
+    &--fill {
+      right: 163px;
+    }
+
+    &--contrast {
+      right: 92px;
+    }
+  }
+
+  @media @desktop {
+    &--crop {
+      right: 203px;
+    }
+
+    &--fill {
+      right: 27px;
+    }
+
+    &--contrast {
+      right: 114px;
+    }
+  }
+
+  &:active {
+    background-color: @lipstick;
+  }
+}

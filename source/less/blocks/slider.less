@@ -1,15 +1,85 @@
-.slider__wrapper {
-  padding-top: 49px;
-  padding-bottom: 59px;
-  text-align: center;
+.slider {
+  position: relative;
+  padding-top: 41px;
+  padding-bottom: 42px;
 
   @media @tablet {
-    padding-top: 106px;
-    padding-bottom: 144px;
+    padding-top: 82px;
+    padding-bottom: 24px;
   }
 
   @media @desktop {
-    padding-top: 193px;
-    padding-bottom: 133px;
+    padding-top: 186px;
+    padding-bottom: 35px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 21%;
+  }
+}
+
+.slider__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media @desktop {
+    margin: 0 auto;
+    width: 780px;
+  }
+}
+
+.slider__title {
+  margin: 0;
+  padding-bottom: 13px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: @black;
+  order: 0;
+
+  @media @tablet {
+    padding-bottom: 0;
+    font-size: 20px;
+    order: 1;
+  }
+
+  @media @desktop {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+}
+
+.slider__text {
+  margin: 0;
+  padding-bottom: 40px;
+  font-size: @font-size-basic;
+  font-weight: @font-weight-basic;
+  line-height: 30px;
+  color: @dark-blue;
+  order: 1;
+
+  @media @tablet {
+    padding-bottom: 33px;
+    font-size: 18px;
+    order: 0;
+  }
+}
+
+.slider__sub-text {
+  display: none;
+  order: 2;
+
+  @media @tablet {
+    display: block;
+    margin: 0;
+    font-size: @font-size-basic;
+    font-weight: @font-weight-basic;
+    line-height: 30px;
+    color: @dark-blue;
+  }
+
+  @media @desktop {
+    font-size: 18px;
   }
 }

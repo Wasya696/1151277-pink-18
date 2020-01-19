@@ -13,12 +13,14 @@
   }
 
   &--form {
+    padding-bottom: 34px;
+
     @media @tablet {
-      padding-bottom: 74px;
+      padding-bottom: 38px;
     }
 
     @media @desktop {
-      padding-bottom: 64px;
+      padding-bottom: 49px;
     }
   }
 }
@@ -38,5 +40,27 @@
 
   @media @desktop {
     width: 575px;
+  }
+
+  &--form {
+    width: 275px;
+
+    @media @tablet {
+      width: 490px;
+    }
+
+    @media @desktop {
+      width: 760px;
+    }
+  }
+}
+
+.page-description__hidden {
+  display: none;
+
+  @media @tablet {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
   }
 }

@@ -1,0 +1,26 @@
+.toggle-arrow {
+  display: none;
+
+  @media @desktop {
+    display: block;
+    padding: 0;
+    position: absolute;
+    top: 220px;
+    width: 22px;
+    height: 41px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+
+    &--left {
+      left: 10px;
+    }
+
+    &--right {
+      right: 10px;
+    }
+  }
+}

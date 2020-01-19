@@ -152,17 +152,25 @@
       <section class="slider">
         <div class="container">
           <div class="slider__wrapper">
-            <div class="slide">
-              <h2 class="slide__title">Николай Петров</h2>
-              <p class="slide__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              <p class="slide__sub-text">25 лет, водитель трамвая</p>
-            </div>
+            <h2 class="slider__title">Николай Петров</h2>
+            <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="slider__sub-text">25 лет, водитель трамвая</p>
           </div>
-          <div class="slider-controls">
-            <button class="slider-controls__button slider-controls__button--current" type="button" value="1"></button>
-            <button class="slider-controls__button" type="button" value="2"></button>
-            <button class="slider-controls__button" type="button" value="3"></button>
+          <div class="toggle">
+            <button class="toggle__item toggle__item--current" type="button" value="1"></button>
+            <button class="toggle__item" type="button" value="2"></button>
+            <button class="toggle__item" type="button" value="3"></button>
           </div>
+          <button class="toggle-arrow toggle-arrow--left" type="button">
+            <svg x="0px" y="0px" width="21.706px" height="41.719px" enable-background="new 0 0 21.706 41.719">
+              <path fill="#283645" d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+            </svg>
+          </button>
+          <button class="toggle-arrow toggle-arrow--right" type="button">
+            <svg x="0px" y="0px" width="21.706px" height="41.719px" enable-background="new 0 0 21.706 41.719">
+              <path fill="#283645" d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+            </svg>
+          </button>
         </div>
       </section>
 
@@ -170,7 +178,7 @@
         <h2 class="visually-hidden">Платные пакеты для Pink</h2>
         <div class="container">
           <div class="price__slider">
-            <table class="price-list">
+            <table class="price__slider-wrapper price-list">
               <thead>
                 <tr>
                   <th class="price-list__header"></th>
@@ -178,7 +186,7 @@
                     <p class="price-list__header-type">База</p>
                     <p class="price-list__header-cost">1,99 usd</p>
                   </th>
-                  <th class="price-list__header">
+                  <th class="price-list__header price-list__header--hit" data-hit-title="Хит">
                     <p class="price-list__header-type">Стандарт</p>
                     <p class="price-list__header-cost">3,99 usd</p>
                   </th>
@@ -188,56 +196,68 @@
                   </th>
                 </tr>
               </thead>
-              <tbody class="price-list__body">
+              <tbody>
                 <tr>
+                  <td class="price-list__cell">Розовый фильтр</td>
                   <td class="price-list__cell">
-                    <p class="price-list__cell-description">Розовый фильтр</p>
+                    <div class="price-list__feature" data-feature-description="Розовый фильтр">
+                      <span class="price-list__feature-value price-list__feature-value--true" aria-label="Да"></span>
+                    </div>
                   </td>
                   <td class="price-list__cell">
-                    <p class="price-list__cell-description"></p>
+                    <div class="price-list__feature" data-feature-description="Розовый фильтр">
+                      <span class="price-list__feature-value price-list__feature-value--true" aria-label="Да"></span>
+                    </div>
                   </td>
                   <td class="price-list__cell">
-                    <p class="price-list__cell-description"></p>
-                  </td>
-                  <td class="price-list__cell">
-                    <p class="price-list__cell-description"></p>
+                    <div class="price-list__feature" data-feature-description="Розовый фильтр">
+                      <span class="price-list__feature-value price-list__feature-value--true" aria-label="Да"></span>
+                    </div>
                   </td>
                 </tr>
                 <tr>
+                  <td class="price-list__cell">Смайлики</td>
                   <td class="price-list__cell">
-                    <p class="price-list__cell-description">Смайлики</p>
+                    <div class="price-list__feature" data-feature-description="Смайлики">
+                      <span class="price-list__feature-value price-list__feature-value--false" aria-label="Нет"></span>
+                    </div>
                   </td>
                   <td class="price-list__cell">
-                    <p class="price-list__cell-description"></p>
+                    <div class="price-list__feature" data-feature-description="Смайлики">
+                      <span class="price-list__feature-value price-list__feature-value--true" aria-label="Да"></span>
+                    </div>
                   </td>
                   <td class="price-list__cell">
-                    <p class="price-list__cell-description"></p>
-                  </td>
-                  <td class="price-list__cell">
-                    <p class="price-list__cell-description"></p>
+                    <div class="price-list__feature" data-feature-description="Смайлики">
+                      <span class="price-list__feature-value price-list__feature-value--true" aria-label="Да"></span>
+                    </div>
                   </td>
                 </tr>
                 <tr>
+                  <td class="price-list__cell">Комментарии</td>
                   <td class="price-list__cell">
-                    <p class="price-list__cell-description">Комментарии</p>
+                    <div class="price-list__feature" data-feature-description="Комментарии">
+                      <span class="price-list__feature-value price-list__feature-value--false" aria-label="Нет"></span>
+                    </div>
                   </td>
                   <td class="price-list__cell">
-                    <p class="price-list__cell-description"></p>
+                    <div class="price-list__feature" data-feature-description="Комментарии">
+                      <span class="price-list__feature-value price-list__feature-value--false" aria-label="Нет"></span>
+                    </div>
                   </td>
                   <td class="price-list__cell">
-                    <p class="price-list__cell-description"></p>
-                  </td>
-                  <td class="price-list__cell">
-                    <p class="price-list__cell-description"></p>
+                    <div class="price-list__feature" data-feature-description="Комментарии">
+                      <span class="price-list__feature-value price-list__feature-value--true" aria-label="Да"></span>
+                    </div>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div class="slider-controls">
-            <button class="slider-controls__button" type="button" value="1"></button>
-            <button class="slider-controls__button slider-controls__button--current" type="button" value="2"></button>
-            <button class="slider-controls__button" type="button" value="3"></button>
+          <div class="toggle toggle--price">
+            <button class="toggle__item" type="button" value="1"></button>
+            <button class="toggle__item toggle__item--current" type="button" value="2"></button>
+            <button class="toggle__item" type="button" value="3"></button>
           </div>
         </div>
       </section>
@@ -264,9 +284,7 @@
 
       <section class="map">
         <h2 class="visually-hidden">Место нахождения Pink</h2>
-        <picture>
-          <img src="https://via.placeholder.com/150x150" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-        </picture>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5906690948927!2d30.321942328119224!3d59.938934142463914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1579378446031!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </section>
     </main>
 
