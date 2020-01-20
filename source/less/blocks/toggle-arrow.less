@@ -5,7 +5,7 @@
     display: block;
     padding: 0;
     position: absolute;
-    top: 220px;
+    top: 25px;
     width: 22px;
     height: 41px;
     cursor: pointer;
@@ -15,12 +15,20 @@
     background-repeat: no-repeat;
     opacity: 0.3;
 
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+
     &--left {
-      left: 10px;
+      left: 0;
     }
 
     &--right {
-      right: 10px;
+      right: 0;
     }
   }
 }

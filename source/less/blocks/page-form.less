@@ -6,12 +6,16 @@
   @media @tablet {
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
 
     @media @desktop {
       flex-flow: row wrap;
-      padding: 0 10px;
     }
+  }
+}
+
+.page-form .container {
+  @media @desktop {
+    width: auto;
   }
 }
 
@@ -95,14 +99,9 @@
 }
 
 .page-form__submit-wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 29px 20px 15px;
+  padding: 29px 0 15px;
 
   @media @tablet {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     padding: 38px 0 50px;
     order: 5;
   }
@@ -116,7 +115,7 @@
 .page-form__field {
   position: relative;
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   border: 0;
 
   @media @tablet {
@@ -169,7 +168,9 @@
   }
 
   &--emotion {
-    padding: 46px 58px 51px;
+    @media @tablet {
+      padding: 46px 58px 51px;
+    }
 
     @media @desktop {
       padding: 43px 58px;
@@ -512,6 +513,14 @@
 
   &:active {
     border: 2px solid @lipstick;
+  }
+}
+
+.page-form__action {
+  @media @tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }
 
