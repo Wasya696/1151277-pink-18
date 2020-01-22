@@ -1,0 +1,53 @@
+.toggle {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 0;
+  line-height: 12px;
+
+  @media @desktop {
+    display: none;
+  }
+
+  &--price {
+    margin-top: 0;
+
+    @media @tablet {
+      display: none;
+    }
+  }
+}
+
+.toggle__item {
+  margin: 0 8px;
+  padding: 0;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  background-color: @dark-blue;
+  opacity: 30%;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 10%;
+  }
+
+  &--current {
+    width: 12px;
+    height: 12px;
+    background-color: @white;
+    opacity: 100%;
+    border: 3px solid @black;
+
+    &:hover,
+    &:active {
+      opacity: 100%;
+    }
+  }
+}
