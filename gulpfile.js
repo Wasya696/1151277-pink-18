@@ -60,10 +60,6 @@ gulp.task("sprite", function () {
 gulp.task("server", function () {
   server.init({
     server: "build/"
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
@@ -108,6 +104,4 @@ gulp.task("build", gulp.series(
   "html"
 ));
 
-gulp.task("start", gulp.series("build", "css", "server"));
-gulp.task("build", gulp.series("css", "sprite", "html"));
-// gulp.task("start", gulp.series("css", "server"));
+gulp.task("start", gulp.series("build", "server"));
